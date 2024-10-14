@@ -52,11 +52,11 @@ h4 {
 .hero {
   position: relative;
   overflow: hidden;
-  padding-top: 40px; /* Add some padding to the top */
+  padding-top: 40px; 
 }
 
 .logo-img {
-  margin-top: -20px; /* Move the logo slightly upwards */
+  margin-top: -20px; 
 }
 
 .we-make-div {
@@ -76,12 +76,20 @@ h4 {
 
 .premium-h1 {
   font-family: Montserrat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.04em;
   color: #4e9459;
   margin-block: 20px;
+}
+
+.premium-h1-1 {
+  opacity: 1; 
 }
 
 .wedding-gallery-h2 {
@@ -278,26 +286,26 @@ h4 {
 }
 
 .btn-secondry {
-  text-decoration: none; /* Ensure the underline is removed */
+  text-decoration: none; 
   color: rgba(78, 148, 89, 1);
   font-family: Poppins;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
-  margin-bottom: 40px; /* Add more space below the button */
+  margin-bottom: 40px; 
   position: relative;
-  padding-bottom: 70px; /* Adjust spacing between button text and the line */
+  padding-bottom: 70px; 
 }
 
-/* Line under the button */
+
 .btn-secondry::after {
   content: "";
   display: block;
   width: 100%;
-  height: 1px; /* Thinner line */
-  background-color: rgba(78, 148, 89, 1); /* Keep same color */
+  height: 1px; 
+  background-color: rgba(78, 148, 89, 1); 
   position: absolute;
-  bottom: -8px; /* Position the line a bit closer to the button */
+  bottom: -8px; 
   left: 0;
 }
 
@@ -337,7 +345,7 @@ h4 {
 .video-container {
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%; 
   position: relative;
   overflow: hidden;
   border-radius: 5px;
@@ -371,7 +379,6 @@ h4 {
 /* why choose us section */
 
 .why-choose-us {
-  /* border-bottom: 1px solid rgba(241, 241, 241, 1); */
   display: flex;
   align-items: center;
   box-shadow: 0px -4px 74.2px 0px rgba(197, 197, 197, 0.25);
@@ -502,6 +509,9 @@ h4 {
   display: grid;
   place-items: center;
 }
+.process-heading {
+  text-transform: uppercase;
+}
 
 .process-steps-container {
   overflow-x: scroll;
@@ -576,6 +586,7 @@ h4 {
   gap: 0px;
   opacity: 0px;
 }
+
 /* pricing section */
 .pricing {
   display: grid;
@@ -588,6 +599,9 @@ h4 {
   }
 }
 
+.pricing-heading{
+  text-transform: uppercase;
+}
 .pricing-grid {
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
@@ -758,7 +772,7 @@ h4 {
 
 .show-more-btn {
   text-decoration: underline;
-  margin-top: 40px; /* Adjust spacing as needed */
+  margin-top: 40px; 
   font-size: 22px;
   font-weight: 400;
   line-height: 16px;
@@ -767,7 +781,7 @@ h4 {
   background: transparent;
   cursor: pointer;
   color: #666666;
-  align-self: center; /* Center the button within the flex container */
+  align-self: center;
 }
 
 /* testimonials section */
@@ -890,8 +904,10 @@ h4 {
   place-content: center;
 }
 .get-started {
+  background: linear-gradient(to bottom, transparent 40%, transparent 40%, #4e9459 40%);
   min-height: 160vh;
   & > .container {
+    margin-bottom: 100px;
     display: flex;
     gap: 2rem;
     box-shadow: 0px -2px 47px -21px #00000040;
@@ -912,7 +928,7 @@ h4 {
         position: absolute;
         left: 68px;
         top: 25px;
-        z-index: -1;
+        z-index: 0;
       }
 
       & > h3 {
@@ -947,6 +963,12 @@ h4 {
     }
   }
 }
+
+.stay-connected{
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
 
 .get-started-left-circle {
   right: -200px;
@@ -998,19 +1020,10 @@ h4 {
   }
 }
 
-.footer-grid-container{
-  margin-top: 220px;
-}
-
-
 footer {
-  padding: 12% 0 20px;
+ padding-bottom: 20px;
   color: #ffffff;
   background: #4e9459;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  bottom: 0;
 }
 
 .footer-grid {
@@ -1029,7 +1042,7 @@ footer {
   & > h3 {
     font-size: 24px;
     font-weight: 500;
-    color: #ffffff99;
+    color: #ffffff;
   }
 
   & > h4 {
@@ -1058,7 +1071,7 @@ footer {
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #ffffff99;
+    color: #ffffff;
     display: block;
     margin-bottom: 1.5rem;
   }
